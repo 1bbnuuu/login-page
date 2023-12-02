@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylee.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+</head>
+<body>
+  <div class="container">
+        <div class="card">
+            <form method="post" action="">
+                <h2 class="register">Register</h2>
+                <p id="passwordError"></p>
+                <input type="text" placeholder="Username" autocomplete="username">
+                <input type="password" minlength="8" id="password" placeholder="Password" autocomplete="password" oninput="checkPasswords()">
+                <input type="password" minlength="8"id="confirmPassword" placeholder="confirm password" oninput="checkPasswords()">
+                
+                <input type="text" id="fullName" placeholder="full name">
+                <input type="number" id="phoneNumber" placeholder="phone number">
+                <button class="tombol-register" type="submit" id="registerButton" disabled onclick="redirectToLogin()">Register</button>
+            </form>
+            <div class="switch">
+                <h5>Already have account?</h5>
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
